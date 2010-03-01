@@ -1,6 +1,6 @@
 body {
   color: #2f3536;
-  font-family: "lucida grande", "lucida sans unicade", "calibri", sans-serif;
+  font-family: "georgia", "bitstream vera serif", serif;
   font-size: 1em;
   line-height: 1.3;
   margin: 1em auto 0;
@@ -8,7 +8,6 @@ body {
 }
 
 h1 {
-  font-family: "georgia", "bitstream vera serif", serif;
   font-weight: bold;
   font-size: 3.1em;
   text-align: center;
@@ -17,14 +16,12 @@ h1 {
 }
 
 h2 {
-  font-family: "georgia", "bitstream vera serif", serif;
   font-size: 2.1em;
   letter-spacing: -1px;
   margin-bottom: -0.3em;
 }
 
 h3 {
-  font-family: "georgia", "bitstream vera serif", serif;
   font-size: 1.5em;
   letter-spacing: -1px;
   margin-top: 1.3em;
@@ -55,7 +52,7 @@ code {
   font-family: "lucida console", "monaco", "andale mono", "consolas", monospace;
   background-color: #eee;
   border: 1px solid #9ea191;
-  padding: 0.1em 0.3em;
+  padding: 0 0.3em;
   margin: 0.3em;
 }
 
@@ -73,7 +70,7 @@ code.block {
 ul#navbar {
   font-family: "lucida console", "monaco", "andale mono", "consolas", monospace;
   font-size: 1.2em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
