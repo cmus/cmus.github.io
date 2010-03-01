@@ -11,19 +11,18 @@ h1 {
   font-weight: bold;
   font-size: 3.1em;
   text-align: center;
-  margin-bottom: 0.1em;
-  margin-left: -0.5em;
+  margin-bottom: 0.2em;
 }
 
 h2 {
+  font-family: "times new roman", "liberation serif", serif;
   font-size: 2.1em;
-  letter-spacing: -1px;
   margin-bottom: -0.3em;
 }
 
 h3 {
+  font-family: "times new roman", "liberation serif", serif;
   font-size: 1.5em;
-  letter-spacing: -1px;
   margin-top: 1.3em;
   margin-bottom: 0.3em;
 }
@@ -50,7 +49,7 @@ ul li:before {
 }
 
 code {
-  font-family: "lucida console", "monaco", "andale mono", "consolas", monospace;
+  font-family: "andale mono", "monaco", "lucida console", "consolas", monospace;
   background-color: #eee;
   border: 1px solid #9ea191;
   padding: 0 0.3em;
@@ -69,7 +68,7 @@ code.block {
 }
 
 ul#navbar {
-  font-family: "lucida console", "monaco", "andale mono", "consolas", monospace;
+  font-family: "linux biolinum o", "times new roman", "liberation serif", serif;
   font-size: 1.2em;
   letter-spacing: 1px;
   text-transform: uppercase;
