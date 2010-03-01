@@ -36,16 +36,17 @@ em {
   font-style: italic;
 }
 
-ul, ol {
-  margin: 0.7em 1.7em;
+ul {
+  margin: 0.7em 2em;
 }
 
-ol li {
-  list-style: decimal outside;
-}
-
-ul li {
+* html ul li {
   list-style: disc outside;
+}
+
+ul li:before {
+  content: "\2014\0020";
+  margin-left: -1.25em;
 }
 
 code {
@@ -86,6 +87,11 @@ ul#navbar li {
 
 ul#navbar li:hover {
   text-decoration: underline;
+}
+
+ul#navbar li:before {
+  content: "";
+  margin: 0;
 }
 
 ul#navbar li a {
