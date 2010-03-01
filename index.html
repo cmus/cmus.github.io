@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="us_EN">
+<head>
+  <meta name="Author" content="Timo Hirvonen"/>
+  <meta name="Description" content="Small, fast and powerful text mode music player"/>
+  <meta name="Keywords" content="cmus, console, curses, cursed, music, player, linux, bsd, ogg, mp3, wav, flac, streaming"/>
+  <title>C* Music Player</title>
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.0.0/build/cssreset/reset-min.css" />
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.0.0/build/cssfonts/fonts-min.css" />
+  <link rel="stylesheet" type="text/css" href="modern.css" />
+  <link rel="alternate" type="application/rss+xml"  href="https://sourceforge.net/export/rss2_keepsake.php?group_id=157009" title="SF.net project updates" />
+  <link rel="alternate" type="application/atom+xml" href="http://gitorious.org/cmus.atom" title="Gitorious activity" />
+</head>
+
+<body>
+  <h1>cmus</h1>
+
+  <ul id="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#documentation">Documentation</a></li>
+    <li><a href="#download">Download</a></li>
+    <li><a href="#development">Development</a></li>
+  </ul>
+
+  <div id="content">
+    <h2><a name="home"></a></h2>
+    <div class="chapter">
+      cmus is a small, <em>fast</em> and powerful text mode music player for Linux and *BSD.
+      <img class="screenshot" alt="cmus screenshot" title="cmus 2.3.0" src="cmus-2.3.0.png" />
+    </div>
+
+    <h2><a name="features">Features</a></h2>
+    <div class="chapter">
+        <h3>Input/Output Plugins</h3>
+        <ul>
+          <li>Input: Ogg/Vorbis, MP3, FLAC, Musepack, WavPack, WMA, WAV, AAC, MP4, and everything supported by libmodplug</li>
+          <li>Output: PulseAudio, ALSA, OSS, libao, aRts, Sun, and WaveOut (Windows)</li>
+        </ul>
+
+        <h3>Playing</h3>
+        <ul>
+          <li>Gapless playback</li>
+          <li>ReplayGain support</li>
+          <li>MP3 and Ogg streaming (Shoutcast/Icecast)</li>
+          <li>Powerful playlist filters</li>
+          <li>Play queue</li>
+        </ul>
+
+        <h3>Interface</h3>
+        <ul>
+          <li>Easy to use directory browser</li>
+          <li>Customizable colors</li>
+          <li>Dynamic keybindings<br/>
+              You can bind a key to any command, <code>:seek +1m</code> for example</li>
+          <li>Vi / less style search mode</li>
+          <li>Vi style command mode with tab completion</li>
+        </ul>
+
+        <h3>Misc</h3>
+        <ul>
+          <li>UTF-8 support</li>
+          <li>Excellent compilations handling</li>
+          <li>Can run external commands for the currently selected files (tag-editor for example)</li>
+          <li>Can be controlled via UNIX socket using <code>cmus-remote</code> command</li>
+          <li>Known to work on Linux, FreeBSD, NetBSD, OpenBSD and Cygwin</li>
+        </ul>
+    </div>
+
+    <h2><a name="documentation">Documentation</a></h2>
+    <div class="chapter">
+      <p>cmus comes with a great reference manual. If you have it installed, try<br/>
+      <code class="man">man cmus-tutorial</code>, <code class="man">man cmus</code> and <code class="man">man cmus-remote</code>.</p>
+
+      <h3>Online Documentation</h3>
+      <ul>
+        <li><a href="http://gitorious.org/cmus/cmus/blobs/master/Doc/cmus-tutorial.txt">cmus-tutorial(7)</a></li>
+        <li><a href="http://gitorious.org/cmus/cmus/blobs/master/Doc/cmus.txt">cmus(1)</a></li>
+        <li><a href="http://gitorious.org/cmus/cmus/blobs/master/Doc/cmus-remote.txt">cmus-remote(1)</a></li>
+      </ul>
+    </div>
+
+    <h2><a name="download">Download</a></h2>
+    <div class="chapter">
+      <h3>Stable Releases</h3>
+      <ul>
+        <li><a href="https://sourceforge.net/projects/cmus/files/cmus-v2.3.0-rc1.tar.bz2/download">cmus-v2.3.0-rc1.tar.bz2</a>, released 22.02.2010</li>
+        <li><a href="https://sourceforge.net/projects/cmus/files/cmus-v2.2.0.tar.bz2/download">cmus-v2.2.0.tar.bz2</a>, released 27.07.2007</li>
+      </ul>
+
+      <h3>Bleeding Edge</h3>
+      <code class="block">git clone git://gitorious.org/cmus/cmus.git</code>
+
+      <h3>Extras</h3>
+      <ul>
+        <li><a href="http://www.hci-matters.com/blog/2008/05/06/c-music-player-audioscrobblerlastfm-patch/">Audioscrobbler/Last.fm patch</a> written by Frank Terbeck</li>
+        <li><a href="http://github.com/freshprince/cmuscrobbler">cmuscrobbler</a> — Python scrobbler script</li>
+        <li><a href="http://github.com/jkramer/post-fm">post-fm</a> — Perl one</li>
+      </ul>
+    </div>
+
+    <h2><a name="development">Development</a></h2>
+    <div class="chapter">
+      <h3>Git Repository</h3>
+      <code class="block">git clone git://gitorious.org/cmus/cmus.git</code>
+
+      <h3>Mailing List</h3>
+      <p>
+        <a href="https://lists.sourceforge.net/lists/listinfo/cmus-devel">cmus-devel@lists.sourceforge.net</a>
+      </p>
+
+      <h3>Dependencies</h3>
+      <ul>
+        <li><a href="http://www.gnu.org/software/ncurses/ncurses.html">ncurses</a> (ncursesw recommended)</li>
+      </ul>
+
+      <h3>Optional Dependencies</h3>
+      <ul>
+        <li><a href="http://pulseaudio.org/">libpulse</a> — PulseAudio</li>
+        <li><a href="http://www.alsa-project.org/">alsa-lib</a> — ALSA</li>
+        <li><a href="http://www.opensound.com/oss.html">OSS</a> — OSS</li>
+        <li><a href="http://www.xiph.org/ao/">libao</a> — libao</li>
+        <li><a href="http://www.arts-project.org/">aRts</a> — aRts</li>
+        <li><a href="http://flac.sourceforge.net/">FLAC</a> — .flac</li>
+        <li><a href="http://www.vorbis.com/">libvorbis</a> — .ogg</li>
+        <li><a href="http://www.musepack.net/">libmpcdec</a> — .mpc, .mpp, .mp+</li>
+        <li><a href="http://www.wavpack.com/">wavpack</a> — .wv</li>
+        <li><a href="http://www.underbit.com/products/mad/">libmad</a> — .mp3</li>
+        <li><a href="http://ffmpeg.org/">libavcodec</a> — .wma</li>
+        <li><a href="http://www.audiocoding.com/">FAAD</a> — .aac</li>
+        <li><a href="http://mpeg4ip.sourceforge.net/">mp4v2, FAAD</a> — .mp4, m4a, m4b</li>
+        <li><a href="http://modplug-xmms.sourceforge.net/">libmodplug</a> — .mod, .s3m, ... </li>
+        <li><a href="http://mikmod.raphnet.net/">libmikmod</a> — .mod, .s3m, ...</li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="modern.js"></script>
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var pkBaseURL = (("https:" == document.location.protocol) ?  "https://sourceforge.net/apps/piwik/cmus/" : "http://sourceforge.net/apps/piwik/cmus/");
+    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+      piwikTracker.trackPageView();
+      piwikTracker.enableLinkTracking();
+    } catch( err ) {}
+  </script>
+  <noscript>
+    <p><img src="http://sourceforge.net/apps/piwik/cmus/piwik.php?idsite=1" style="border:0" alt=""/></p>
+  </noscript>
+  <!-- End Piwik Tag -->
+
+</body>
+</html>
