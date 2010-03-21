@@ -36,16 +36,7 @@ em {
 }
 
 ul {
-  margin: 0.7em 2em;
-}
-
-* html ul li {
-  list-style: disc outside;
-}
-
-ul li:before {
-  content: "\2014\0020";
-  margin-left: -1.25em;
+  margin: 0.7em 1.5em;
 }
 
 code {
@@ -88,11 +79,6 @@ ul#navbar li:hover {
   text-decoration: underline;
 }
 
-ul#navbar li:before {
-  content: "";
-  margin: 0;
-}
-
 ul#navbar li a {
   text-decoration: none;
   color: inherit;
@@ -100,6 +86,10 @@ ul#navbar li a {
 
 #content {
   padding-top: 1.7em;
+}
+
+#content li {
+  margin-bottom: 0.3em;
 }
 
 .chapter {
