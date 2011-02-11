@@ -9,7 +9,7 @@ $(function() {
 
     function show_content(name) {
       $("#content")
-        .children("h2:has(a[name='" + name + "'])")
+        .children("h2[id='" + name + "']")
         .show()
         .next("div")
         .show();
