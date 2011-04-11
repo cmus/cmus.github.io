@@ -96,6 +96,10 @@ ul#navbar li a {
   padding-bottom: 2.7em;
 }
 
+#home + .chapter {
+  text-align: center;
+}
+
 img.screenshot {
   display: block;
   margin: 1.3em auto 0;
