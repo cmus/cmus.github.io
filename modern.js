@@ -8,8 +8,7 @@ $(function() {
     }
 
     function show_content(name) {
-      $("#content")
-        .children("h2[id='" + name + "']")
+      $('#' + name)
         .show()
         .next("div")
         .show();
