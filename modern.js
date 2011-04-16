@@ -41,5 +41,15 @@ $(function() {
         show_only(href.substring(1));
     });
 
+    $('.share-button')
+        .attr('href', 'javascript:void(0)')
+        .click(function(e) {
+            e.preventDefault();
+
+            $('#share').toggle();
+        });
+
+
+    $('#share').hide();
     show_only(location_id());
 });

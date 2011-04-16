@@ -103,5 +103,11 @@ ul#navbar li a {
 
 img.screenshot {
   display: block;
-  margin: 1.3em auto 0;
+  margin: 1.3em auto 2.3em;
+}
+
+.share-button {
+  text-decoration: none;
+  color: #5D695D;
+  border-bottom: 1px dashed #5D695D;
 }
