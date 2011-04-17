@@ -33,9 +33,12 @@ $(function() {
     }
 
     $("#navbar a").click(function(e) {
-        e.preventDefault();
-
         var href = $(this).attr("href");
+
+        if (href.indexOf("#") === -1)
+          return;
+
+        e.preventDefault();
         location_set_id(href);
 
         show_only(href.substring(1));
