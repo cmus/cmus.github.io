@@ -103,7 +103,7 @@ ul#navbar li a {
 
 img.screenshot {
   display: block;
-  margin: auto;
+  margin: 1.3em auto 2.3em;
 }
 
 .share-button {
