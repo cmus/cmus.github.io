@@ -2,16 +2,16 @@ $(function() {
     function hide_content() {
       $("#content")
         .children("h2")
-        .fadeOut()
+        .hide()
         .next("div")
-        .fadeOut();
+        .hide();
     }
 
     function show_content(name) {
       $('#' + name)
-        .fadeIn()
+        .show()
         .next("div")
-        .fadeIn()
+        .show();
     }
 
     function show_only(name) {
@@ -49,7 +49,7 @@ $(function() {
         .click(function(e) {
             e.preventDefault();
 
-            $('#share').slideToggle();
+            $('#share').toggle();
         });
 
 
