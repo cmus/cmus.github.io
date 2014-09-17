@@ -1,3 +1,7 @@
+html {
+  overflow-y: scroll;
+}
+
 body {
   color: #2f3536;
   font-family: "georgia", "bitstream vera serif", serif;
