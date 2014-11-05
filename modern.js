@@ -52,4 +52,16 @@
 
   $('#share').hide();
   show_only(location_id());
+
+  // ensure the correct content is shown when someone loads a page
+  // or presses the back/forward buttons
+  window.onpopstate = function() {
+    var pageName = location.hash.substring(1);
+
+    if (pageName.length === 0) {
+      pageName = 'home';
+    }
+
+    show_only(pageName);
+  };
 })();
