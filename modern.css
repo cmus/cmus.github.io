@@ -111,3 +111,13 @@ img.screenshot {
   color: #5D695D;
   border-bottom: 1px dashed #5D695D;
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    width: auto;
+  }
+
+  img.screenshot {
+    width: 100%;
+  }
+}
