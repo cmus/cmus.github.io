@@ -112,7 +112,7 @@ img.screenshot {
   border-bottom: 1px dashed #5D695D;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 775px) {
   body {
     width: auto;
   }
