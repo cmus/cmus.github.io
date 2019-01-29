@@ -172,16 +172,14 @@
       </ul>
 
       <h3>Bleeding Edge</h3>
-      <p>If you want to help cmus development and be among the first to try the latest and greatest features, use the <em>pu</em> (proposed updates) branch, e.g.:</p>
-      <pre><code class="block">git clone -b pu <a href="https://github.com/cmus/cmus">https://github.com/cmus/cmus.git</a>
+      <p>If you want to help cmus development and be among the first to try the latest and greatest features, use the <em>master</em> branch, e.g.:</p>
+      <pre><code class="block">git clone <a href="https://github.com/cmus/cmus">https://github.com/cmus/cmus.git</a>
 cd cmus
 ./configure prefix=$HOME/cmus
 make install</code></pre>
       <p>You may want to add the installation directory to your PATH, e.g.:</p>
       <pre><code class="block">echo 'export PATH=$HOME/cmus/bin:$PATH' &gt;&gt; ~/.bashrc ; . ~/.bashrc</code></pre>
 
-      <p>Since the branch is recreated, you need to use this command to update the source tree (instead of git pull):</p>
-      <pre><code class="block">git remote update &amp;&amp; git reset --hard origin/pu</code></pre>
       <p>Don't hesitate to submit an <a href="https://github.com/cmus/cmus/issues">issue</a> if you have any problems, suggestions or bug reports.</p>
     </div>
 
