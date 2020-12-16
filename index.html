@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>C* Music Player</title>
-  <meta name="Author" content="Timo Hirvonen">
-  <meta name="Description" content="Small, fast and powerful console music player">
-  <meta name="Keywords" content="cmus, console, curses, music, player, linux, unix, bsd, ogg, mp3, wav, flac, streaming">
-  <meta name="viewport" content="initial-scale=1">
+  <title>cmus - C* Music Player</title>
+  <meta name="author" content="Timo Hirvonen">
+  <meta name="description" content="cmus is a small, fast and powerful console music player for Unix-like operating systems.">
+  <meta name="keywords" content="cmus, console, curses, music, player, linux, unix, bsd, ogg, mp3, wav, flac, streaming">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="reset-min.css">
   <link rel="stylesheet" href="fonts-min.css">
   <link rel="stylesheet" href="modern.css">
@@ -28,14 +28,16 @@
 <body>
   <h1>cmus</h1>
 
-  <ul id="navbar">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#documentation">Documentation</a></li>
-    <li><a href="#download">Download</a></li>
-    <li><a href="#development">Development</a></li>
-    <li><a href="https://github.com/cmus/cmus/wiki/">Wiki</a></li>
-  </ul>
+  <nav>
+    <ul id="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#documentation">Documentation</a></li>
+      <li><a href="#download">Download</a></li>
+      <li><a href="#development">Development</a></li>
+      <li><a href="https://github.com/cmus/cmus/wiki/">Wiki</a></li>
+    </ul>
+  </nav>
 
   <div id="content">
     <h2 id="home"></h2>
@@ -47,14 +49,9 @@
       <p><a class="share-button" href="#share">Share this page</a></p>
       <div id="share">
         <ul>
-          <li><a href="http://identi.ca/index.php?action=newnotice&amp;status_textarea=C%2a%20Music%20Player%3a%20http%3A%2F%2Fcmus.github.io%2F">Identi.ca</a></li>
-          <li><a href="http://del.icio.us/post?url=http%3A%2F%2Fcmus.github.io%2F&amp;title=C%2a%20Music%20Player">Delicious</a></li>
-          <li><a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fcmus.github.io%2F&amp;title=C%2a%20Music%20Player">Digg</a></li>
-          <li><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fcmus.github.io%2F&amp;title=C%2a%20Music%20Player">StumbleUpon</a></li>
           <li><a href="http://www.google.com/bookmarks/mark?op=add&amp;bkmk=http%3A%2F%2Fcmus.github.io%2F&amp;title=C%2a%20Music%20Player">Google</a></li>
-          <li><a href="http://myweb2.search.yahoo.com/myresults/bookmarklet?u=http%3A%2F%2Fcmus.github.io%2F&amp;t=C%2a%20Music%20Player">Yahoo</a></li>
-          <li><a href="http://twitter.com/home?status=http%3A%2F%2Fcmus.github.io%2F">Twitter</a></li>
           <li><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fcmus.github.io%2F&amp;t=C%2a%20Music%20Player">Facebook</a></li>
+          <li><a href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fcmus.github.io%2F">Twitter</a></li>
         </ul>
       </div>
     </div>
@@ -112,7 +109,8 @@
       cmus (see <a href="https://github.com/cmus/cmus/wiki/cmus-packages">list of cmus packages</a>),
       installation is straightforward, e.g.:
       <ul>
-        <li><b>Ubuntu</b>: <code>sudo apt-get install cmus</code></li>
+        <li><b>Debian/Ubuntu Linux</b>: <code>sudo apt-get install cmus</code></li>
+        <li><b>Arch Linux</b>: <code>sudo pacman -S cmus</code></li>
         <li><b>OS X</b>: <code>brew install cmus</code></li>
       </ul>
       Otherwise, please consider compiling from source — it is not hard at all.
@@ -189,15 +187,20 @@ make install</code></pre>
       <p>
         <a href="https://github.com/cmus/cmus">https://github.com/cmus/cmus</a>
       </p>
+      <h3>Issue Tracker</h3>
+      <p>Please use the GitHub <a href="https://github.com/cmus/cmus/issues">issues</a> page for any problems, suggestions, or bug reports.</p>
 
       <h3>Mailing List</h3>
-      <p>The mailing list now serves as an archive for old releases and issues. Please use the github <a href="https://github.com/cmus/cmus/issues">issues</a> page for any problems, suggestions, or bug reports.</p>
-      <p>
-        <a href="https://lists.sourceforge.net/lists/listinfo/cmus-devel">cmus-devel@lists.sourceforge.net</a>
-      </p>
-      <p>
-        <a href="http://dir.gmane.org/gmane.comp.audio.cmus.devel">Gmane mirror</a>
-      </p>
+      <p>The mailing list now serves as an archive for old releases and issues. 
+
+      <ul>
+        <li>
+          <a href="https://sourceforge.net/p/cmus/mailman/cmus-devel/" rel="nofollow">cmus-devel@lists.sourceforge.net</a> <small>(archived)</small>
+        </li>
+        <li>
+          <a href="http://dir.gmane.org/gmane.comp.audio.cmus.devel" rel="nofollow">Gmane</a> <small>(mirror)</small>
+        </li>
+      </ul>
 
       <h3>Dependencies</h3>
       <ul>
@@ -211,17 +214,17 @@ make install</code></pre>
         <li><a href="http://www.opensound.com/oss.html">OSS</a> (OSS)</li>
         <li><a href="http://roaraudio.keep-cool.org/">libroar</a> (RoarAudio)</li>
         <li><a href="http://www.xiph.org/ao/">libao</a> (libao)</li>
-        <li><a href="http://www.arts-project.org/">aRts</a> (aRts)</li>
+        <li><a href="https://web.archive.org/web/20120227030345/http://www.arts-project.org/">aRts</a> (aRts)</li>
         <li><a href="http://www.gnu.org/software/libcdio/">libcdio</a> (cdio plugin)</li>
         <li><a href="http://libcddb.sourceforge.net/">libcddb</a> (cdio plugin)</li>
-        <li><a href="http://flac.sourceforge.net/">FLAC</a> (.flac)</li>
+        <li><a href="https://xiph.org/flac/">FLAC</a> (.flac)</li>
         <li><a href="https://www.opus-codec.org/">Opus</a> (.opus)</li>
         <li><a href="http://www.vorbis.com/">libvorbis</a> (.ogg)</li>
         <li><a href="http://www.musepack.net/">libmpcdec</a> (.mpc, .mpp, .mp+)</li>
         <li><a href="http://www.wavpack.com/">wavpack</a> (.wv)</li>
         <li><a href="http://www.underbit.com/products/mad/">libmad</a> (.mp3)</li>
         <li><a href="http://ffmpeg.org/">libavcodec</a> (.wma, .ape, .mka, .tta, .shn, ...)</li>
-        <li><a href="http://www.audiocoding.com/">FAAD</a> (.aac)</li>
+        <li><a href="https://web.archive.org/web/20161216200940/http://www.audiocoding.com/">FAAD</a> (.aac)</li>
         <li><a href="http://mpeg4ip.sourceforge.net/">mp4v2, FAAD</a> (.mp4, .m4a, .m4b)</li>
         <li><a href="http://modplug-xmms.sourceforge.net/">libmodplug</a> (.mod, .s3m, ...)</li>
         <li><a href="http://mikmod.raphnet.net/">libmikmod</a> (.mod, .s3m, ...)</li>
